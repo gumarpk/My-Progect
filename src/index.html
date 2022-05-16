@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Андрей Браун - Веб разработчик</title>
+    <script src="//maps.google.com/maps/api/js?sensor=false"></script>
+<script>function showPosition() { if(navigator.geolocation) { navigator.geolocation.getCurrentPosition(showMap, showError); } else { alert("Извините, ваш браузер не поддерживает геолокацию HTML5."); }
+}
+// Определяем функцию обратного вызова для успешной попытки
+function showMap(position) { // Получаем данные о местоположении lat = position.coords.latitude; long = position.coords.longitude; var latlong = new google.maps.LatLng(lat, long); var myOptions = { center: latlong, zoom: 16, mapTypeControl: true, navigationControlOptions: { style:google.maps.NavigationControlStyle.SMALL } } var map = new google.maps.Map(document.getElementById("embedMap"), myOptions); var marker = new google.maps.Marker({ position:latlong, map:map, title:"Вы находитесь здесь!" });
+}
+// Определяем функцию обратного вызова для неудачной попытки
+function showError(error) { if(error.code == 1) { result.innerHTML = "Вы решили не делиться своей позицией, но все в порядке. Мы не будем спрашивать вас снова."; } else if(error.code == 2) { result.innerHTML = "Сеть не работает или услуга определения местоположения недоступна."; } else if(error.code == 3) { result.innerHTML = "Время ожидания до получения данных о местоположении истекло."; } else { result.innerHTML = "Определение геолокации не удалось из-за неизвестной ошибки."; }
+}
+</script>
+    
+</head>
+<body>
+  <style>
+      body{background-image:url(img/%D0%BF%D0%BB%D0%B0%D1%88%D0%BA%D0%B0.png);
+      background-repeat:no-repeat
+      }
+    </style>
+    <header>
+        <nav>
+            <div class="logo">Андрей Браун</div>
+            <div class="menu"><ul>
+                <li>Обо мне</li>
+                <li>Услуги</li>
+                <li>Кейсы</li>
+                <li>Прайс</li>
+                <li>Отзывы</li>
+                <li>Контакты</li>
+                </ul>
+        </div>
+             
+        </nav>
+    </header>
+    
+    <div class="main"><div class="title__container">
+        <h1>Привет <br>Я Андрей Браун</h1>
+        <h4>Фулл стек веб-разработчик</h4>
+        <input type="submit" value="Обо мне">
+        <input type="submit" value="Мои работы">
+        
+    <div>
+        <h2>Обо мне</h2>
+        <img src="img/%D0%A7%D0%B5%D1%80%D1%82%D0%B0%20%D0%B7%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BA%D0%B01.png" alt="">
+        <p><img src="img/%D1%84%D0%BE%D1%82%D0%BA%D0%B03.png" width="150px"></p>
+        
+       
+        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante
+<p>facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
+</h4>
+
+<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante
+<p>facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
+</h4>
+</div>
+<div>
+    <a href="">Скачать резюме</a>
+</div>     
+<div>
+    <h2>Что я умею</h2>
+      <img src="img/%D0%A7%D0%B5%D1%80%D1%82%D0%B0%20%D0%B7%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BA%D0%B02.png" alt="">
+       <ul>
+                <img src="img/%D0%BD%D0%BE%D1%83%D1%82.png" width="70px">
+                <li>Веб дизайн</li>
+                 <img src="img/%D0%B7%D0%BD%D0%B0%D0%BA.png" width="70px">
+                <li>Разработка</li>
+                 <img src="img/%D1%80%D0%B0%D0%BA%D0%B5%D1%82%D0%B0.png" width="70px">
+                <li>CEO-Оптимизация</li>
+                 <img src="img/%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%BE%D1%84%D0%BE%D0%BD.png" width="70px">
+                <li>Маркетинг</li>
+                 </ul>
+   </div> 
+   <div>
+       <h2>Кейсы</h2>
+       <img src="img/%D0%A7%D0%B5%D1%80%D1%82%D0%B0%20%D0%B7%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BA%D0%B03.png" alt="">
+       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed Dapibus leo nec ornare diamcoccodo nibh ante facilisis.</p>
+       </div>
+        <img src="img/%D1%84%D0%BE%D1%82%D0%BA%D0%B0.jpg" width="1000px">
+        
+        <div>
+            <h4><b><big>CLIENT:</big></b></h4>
+           <p>Какая то компания</p>
+            <h4><b><big>WEBSITE:</big></b></h4>
+            <p>m</p>
+          <div class="items-wrap">
+
+            <div class="info-item">
+              <a href="https://yandex.ru/" target="_blank">
+                <img src="img/%D0%9F%D1%80%D1%8F%D0%BC%D0%BE%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA,%20%D1%81%D0%BA%D1%80%D1%83%D0%B3%D0%BB.%20%D1%83%D0%B3%D0%BB%D1%8B%204.png" alt="VISIY LIVE SITE">
+                <p>VISIY LIVE SITE</p>
+                </a>
+              </div>
+            
+            <p><b><big>Название проекта</big></b></p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit., sed do eiusmod tempor incididunt ut labore et dolore magna
+<p>aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+       
+       
+       
+        </div>
+        <div>
+            <h2><b><big>Расчет стоимости</big></b></h2>
+            <h5>ТИП САЙТА</h5>
+               <form>
+ <input list="browsers" name="browser" placeholder="Выберете пункт...">
+<datalist id="browsers">
+  <option value="Internet Explorer">
+  <option value="Firefox">
+  <option value="Chrome">
+  <option value="Opera">
+  <option value="Safari">
+</datalist>
+ </form>
+                <h5>ДИЗАЙН</h5>
+                <form>
+ <input list="browsers" name="browser" placeholder="Выберете пункт...">
+<datalist id="browsers">
+  <option value="Internet Explorer">
+  <option value="Firefox">
+  <option value="Chrome">
+  <option value="Opera">
+  <option value="Safari">
+</datalist>
+ </form>
+            <h5>АДАПТИВНОСТЬ</h5>
+               <form>
+ <input list="browsers" name="browser" placeholder="Выберете пункт...">
+<datalist id="browsers">
+  <option value="Internet Explorer">
+  <option value="Firefox">
+  <option value="Chrome">
+  <option value="Opera">
+  <option value="Safari">
+</datalist>
+ </form>
+            <p><b><small>Сроки</small></b></p>      
+            
+            <p><b><small>Стоимость</small></b></p>
+            </div>
+            <div>
+                <h2>НЕМНОГО СТАТИСТИКИ</h2>
+                <img src="img/%D0%A7%D0%B5%D1%80%D1%82%D0%B0%20%D0%B7%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BA%D0%B04.png" alt="">
+                <p><img src="img/%D1%81%D0%BC%D0%B0%D0%B9%D0%BB.png" alt="" width="50px"></p>
+                <p><b><big>120</big></b></p>
+                <p>СЧАСТЛИВЫХ КЛИЕНТОВ</p>
+                <img src="img/%D1%81%D0%BA%D0%BE%D0%B1%D0%BA%D0%B8.png"alt="" width="50px">
+                <p><b><big>4.600</big></b></p>
+                <p>ЧАСОВ РАБОТЫ</p>
+                <img src="img/%D0%B3%D0%B0%D0%BB%D0%BE%D1%87%D0%BA%D0%B0.png" alt="" width="50px">
+                <p><b><big>340</big></b></p>
+                <p>ПРОЕКТОВ ЗАВЕРШЕНО</p>
+                <img src="img/%D0%BA%D1%83%D0%B1%D0%BE%D0%BA.png" alt="" width="50px">
+                <p><b><big>23</big></b></p>
+                <p>НАГРАД ПОЛУЧЕНО</p>
+            </div>
+            <div>
+                 <h2>ОТЗЫВЫ</h2>
+                 <img src="img/%D0%A7%D0%B5%D1%80%D1%82%D0%B0%20%D0%B7%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BA%D0%B05.png" alt="">
+                 <p><img src="img/%D1%84%D0%BE%D1%82%D0%BA%D0%B02.png" alt="" width="70"></p>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante
+<p>facilisis bibendum dolor feugiat at duis sed dapidus leo nec ornare diam.</p>
+           <p><b><big>Михаил</big></b>, Ген директор ПАО “Газпром”.</p>
+            </div>
+            <div>
+                <h2><b><small>МОИ КОНТАКТЫ</small></b></h2>
+                <img src="img/%D0%A7%D0%B5%D1%80%D1%82%D0%B0%20%D0%B7%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BA%D0%B06.png" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leo nec ornare diamcoccodo </p>
+               <img src="img/%D0%B3%D0%B5%D0%BE.png" alt="" width="20">
+                <p>Санкт-Петербург<p>
+                Невский проспект 11</p>
+                 <img src="img/%D0%BA%D0%BE%D0%BD%D0%B2%D0%B5%D1%80%D1%82.png" alt="" width="20">
+                <p>info@companyname.com</p>                                   
+                <img src="img/%D1%82%D1%80%D1%83%D0%B1%D0%B0.png" alt="" width="20">
+                <p>+7 999 999-99-99</p><
+                <p><b><big>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</big></b></p>
+               <form action="#">
+                 <input type="name" placeholder="Имя">
+                <input type="Email" placeholder="Email">
+                <p><textarea name="text" id="" cols="30" rows="5" placeholder="Сообщение"></textarea></p>
+                <input type="reset" value="Отправить">
+                </form>
+                <pre>                        <img src="img/%D1%84%D0%B1.png" alt="">     <img src="img/%D1%82%D0%B2%D0%B8%D1%82%D0%B5%D1%80.png" alt="">     <img src="img/%D0%BC%D1%8F%D1%87.png" alt="">     <img src="img/%D0%BA%D0%B8%D1%81%D0%B0.png" alt="">     <img src="img/%D0%B8%D0%BD%D1%81%D1%82.png" alt="">     <img src="img/%D0%B8%D0%BD.png" alt="">
+                    
+                </pre>
+                <button type="button" onclick="showPosition();">Показать мою позицию на Google-карте</button> <div id="embedMap" style="width: 400px; height: 300px;"> <!--Google-карта будет встроена сюда--> </div>
+                <p>Copyright © 2021 Андрей Браун. Design by Web</p>
+               
+            </div>
+    
+</body>
+</html>
